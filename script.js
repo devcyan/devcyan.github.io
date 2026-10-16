@@ -28,7 +28,7 @@ if (contactForm) {
     const message = String(formData.get("message") || "").trim();
 
     // TODO: Replace this address with the email you want to publish.
-    const recipient = "YOUR_EMAIL_HERE@example.com";
+    const recipient = "devzende27@gmail.com";
     const subject = encodeURIComponent(`[Portfolio] ${topic} — ${name}`);
     const body = encodeURIComponent(`Hi Devidas,\n\n${message}\n\nFrom: ${name}\nReply to: ${email}\nTopic: ${topic}`);
     window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
